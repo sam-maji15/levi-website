@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>React</title>
+  
+  <!-- React -->
+  <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
+  
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- Default font - Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+    }
+  </style>
+  
+  <header style="position: fixed; z-index: 20">
+  <nav class="navbar">
+    <h2 class="navbar-title">Levi Ackerman</h2>
+    <div class="navbar-nav"></div>
+    <a class="navbar-menu-icon">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+      <ul class="navbar-menu-full">
+        <li style="margin-right: 1rem; position: absolute; top: 0; right: 0;"><a id="btn-close-menu"><i class="fa fa-close"></i></a></li>
+        <li id="btn-menu-home">Home</li>
+        <li id="btn-menu-profile">Profile</li>
+        <li id="btn-menu-skills">Skills</li>
+        <li>Contact Me</li>
+        <li id="btn-change-theme" style="display: block; margin-top: auto;">Change Theme
+        <a id="toggle-dark-theme" style="background: white;"><i style="font-size:1rem; position: absolute; right: 1rem;" class="fa fa-moon"></i></a>
+        </li>
+      </ul>
+    
+  </nav>
+  </header>
+  
+  <main class="block-01">
+    <div class="con-scroll-text">
+    <h2>Scroll Down <i class="fa fa-arrow-down"></i></h2>
+    </div>
+    
+    <div class="con-main-text">
+      <h2>Oi<br><span>Oii.</span></h2>
+    </div>
+    
+    <img class="my-image" src="./assets/img/levi.png" alt="My Image">
+  </main>
+  
+  
+  <!-- BLOCK 02 -->
+  <section class="block-02">
+    <h2 class="def-title">About</h2>
+    <div class="my-img-con">
+      <img class="my-image-alt" src="./assets/img/levi.png">
+    </div>
+    <div>
+    <h2>My name is Eren Jeager</h2>
+    <p>I am the Usurper</p>
+    <p>"If you win, you live. If you lose, you die. If you don't fight, you can't win."</p>
+    </div>
+    
+    <div class="my-social-media">
+      <a><i class='bx bxl-linkedin'></i></a>
+      
+      <a href="https://instagram.com/sam.maji15"><i class="bx bxl-instagram"></i></a>
+      
+      <a href="https://github.com/sam-maji15"><i class="bx bxl-github"></i></a>
+    </div>
+  </section>
+  
+  <section class="block-03">
+    <h2 class="def-title">Skills</h2>
+    <div class="levi-stat-details">
+      <h2>Figures</h2>
+      <ul>
+        <li><b>Kill Count:</b> Unlimited</li>
+        <li><b>Strength:</b> Unlimited</li>
+        <li><b>HP:</b> Unlimited</li>
+      </ul>
+    </div class="levi-stat-hobbies">
+    <div>
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Cleaning</li>
+        <li>Drinking Tea</li>
+        <li>Kicking Eren's Ass</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- <section class="block-04">
+    <h2>Satisfied Customer Reviews</h2>
+    <ul>
+      <li>"Ereh" - Mikasa</li>
+      <li>"Kill me" - Reiner</li>
+      <li>"Give up on your dreams and die" - Levi Ackerman</li>
+      <li>"Where is meat?" - Sasha</li>
+    </ul>
+  </section> -->
+  
+  <section class="block-06">
+    <h2>EXPLORE</h2>
+    
+    <ul>
+    <li id="cred-btn-menu-home">Home</li>
+    <li id="cred-btn-menu-profile">Profile</li>
+    <li id="cred-btn-menu-skills">Skills</li>
+    <li>Contact Me</li>
+    <li>Change Theme<i class="bx bxl-sun"></i></li>
+    </ul>
+    
+    <h2>FOLLOW</h2>
+    <div>
+      <a><i class='bx bxl-linkedin'></i></a>
+      
+      <a href="https://instagram.com/sam.maji15"><i class="bx bxl-instagram"></i></a>
+      
+      <a href="https://github.com/sam-maji15"><i class="bx bxl-github"></i></a>
+    </div>
+    
+  </section>
+  
+  <div id="react-app"></div>
+  
+  <script src="config.js"></script>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+
