@@ -1,2 +1,1 @@
-# html-react-template
-Just a template for initializing a react project
+# Give up on your dreams and die
