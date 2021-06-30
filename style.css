@@ -60,7 +60,7 @@
 
 .dark-theme {
   --pri-color: black;
-  --white-color: limegreen;
+  --white-color: palegreen;
 }
 
 /*===== BASE =====*/
@@ -312,4 +312,23 @@ ul {
 .block-06>div>a>i{
   font-size: 1.5rem;
 }
-  
+ 
+ 
+ 
+/* comment item styles  */
+.com-item {
+ display: flex;
+ flex-flow: column;
+}
+.con-item>div {
+  display: flex;
+  flex-flow: row;
+  width: 100vw;
+  justify-content: space-between;
+}
+.com-username {
+  font-size: 0.9rem;
+}
+.com-comment {
+  font-weight: 500;
+}
