@@ -6,12 +6,14 @@
       "comment": "This website is too short",
       "time": "12:32",
       "date": "29/6/21",
+      "img": "./assets/img/eren.jpeg",
       "replies": [
         {
           "key": 1,
           "username": "godlevi18",
           "comment": "You need ass kicking",
           "time": "12:42",
+          "img": "./assets/img/levi01.jpeg",
           "data": "29/6/21"
         },
         {
@@ -19,6 +21,7 @@
           "username": "mikasa_yeager24",
           "comment": "Stay away from my husband",
           "time": "12:45",
+          "img": "./assets/img/mikasa.jpeg",
           "data": "29/6/21"
         }
         ]
@@ -28,7 +31,9 @@
       "username": "sashabraun289",
       "comment": "cleanup done.. where's meat",
       "time": "10:02",
-      "date": "30/6/21"
+      "date": "30/6/21",
+      "img": "./assets/img/sasha.jpeg",
+      "replies": []
     }
     ]
 }
