@@ -35,3 +35,27 @@ let c2 = Math.floor(document.querySelector('.block-03').getBoundingClientRect().
 btn_menu_home.onclick = () => window.scroll({top: 0, left:0, behavior: 'smooth'})
 btn_menu_profile.onclick = () => window.scroll({top: c1, left: 0, behavior: 'smooth'})
 btn_menu_skills.onclick = () => window.scroll({top: c2, left: 0, behavior: 'smooth'})
+
+
+
+/* SCROLL REVEAL */
+const scr = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 2000,
+  reset: true
+})
+
+/*SCROLL HOME*/
+scr.reveal('.con-main-text>h2', {})
+scr.reveal('.text-title', {origin: 'right'})
+scr.reveal('.my-image', {origin: 'right', delay:200})
+
+// SCROLL ANIM OM MENU ITEMS
+scr.reveal('.navbar-menu-full>li', {origin: 'right'})
+
+
+scr.reveal('.def-title', {})
+scr.reveal('.my-social-media>a:first-child', {delay: 200})
+scr.reveal('.my-social-media>a:nth-child(2)', {delay: 400})
+scr.reveal('.my-social-media>a:nth-child(3)', {delay: 600})
