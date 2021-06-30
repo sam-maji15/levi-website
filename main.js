@@ -52,7 +52,7 @@ scr.reveal('.text-title', {origin: 'right'})
 scr.reveal('.my-image', {origin: 'right', delay:200})
 
 // SCROLL ANIM OM MENU ITEMS
-scr.reveal('.navbar-menu-full>li', {origin: 'right'})
+// scr.reveal('.navbar-menu-full>li', {origin: 'right'})
 
 
 scr.reveal('.def-title', {})
