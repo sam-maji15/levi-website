@@ -47,15 +47,15 @@ const scr = ScrollReveal({
 })
 
 /*SCROLL HOME*/
-scr.reveal('.con-main-text>h2', {})
+/*scr.reveal('.con-main-text>h2', {})
 scr.reveal('.text-title', {origin: 'right'})
-scr.reveal('.my-image', {origin: 'right', delay:200})
+scr.reveal('.my-image', {origin: 'right', delay:200})*/
 
 // SCROLL ANIM OM MENU ITEMS
 // scr.reveal('.navbar-menu-full>li', {origin: 'right'})
 
 
-scr.reveal('.def-title', {})
+/*scr.reveal('.def-title', {})
 scr.reveal('.my-social-media>a:first-child', {delay: 200})
 scr.reveal('.my-social-media>a:nth-child(2)', {delay: 400})
-scr.reveal('.my-social-media>a:nth-child(3)', {delay: 600})
+scr.reveal('.my-social-media>a:nth-child(3)', {delay: 600})*/
