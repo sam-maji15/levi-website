@@ -1,0 +1,34 @@
+{
+  "comments": [
+    {
+      "key": 0,
+      "username": "eren_yeager24",
+      "comment": "This website is too short",
+      "time": "12:32",
+      "date": "29/6/21",
+      "replies": [
+        {
+          "key": 1,
+          "username": "godlevi18",
+          "comment": "You need ass kicking",
+          "time": "12:42",
+          "data": "29/6/21"
+        },
+        {
+          "key": 2,
+          "username": "mikasa_yeager24",
+          "comment": "Stay away from my husband",
+          "time": "12:45",
+          "data": "29/6/21"
+        }
+        ]
+    },
+    {
+      "key": 3,
+      "username": "sashabraun289",
+      "comment": "cleanup done.. where's meat",
+      "time": "10:02",
+      "date": "30/6/21"
+    }
+    ]
+}
