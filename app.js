@@ -26,9 +26,9 @@ class App extends Component {
         
         if (typeof item.replies !== 'undefined' ) {
           const replies = item.replies.map(item_child => {
-            return <h2 key={item_child.key}>{item_child.comment}</h2>
+            return <CommentItemReply key={item_child.key} username={item_child.username} comment={item_child.comment} img={item_child.img}/>
           })
-          return <CommentItem key={item.key} comment={item.comment} username={item.username} date={item.date} time={item.time}>
+          return <CommentItem key={item.key} comment={item.comment} username={item.username} date={item.date} time={item.time} img={item.img}>
             {replies}
           </CommentItem>
         }
@@ -46,17 +46,27 @@ class App extends Component {
 
 function CommentItem(prop) {
   return (
-    <div className="com-item">
     <div>
-    <h3 className="com-username">{prop.username}</h3>
-    <h3 className="com-date-time">{prop.time} {prop.date}</h3>
-    </div>
+    <div className="com-con">
+    <img className="com-profile" src={prop.img} />
+    <div>
+    <h2 className="com-username">@{prop.username}</h2>
     <h2 className="com-comment">{prop.comment}</h2>
-    {prop.children}
     </div>
+  </div>
+  {prop.children}
+  </div>
+    )
+}
+
+function CommentItemReply(prop) {
+  return (
+  <div class="com-con-rep">
+    <CommentItem username={prop.username} comment={prop.comment} img={prop.img}/>
+  </div>
     )
 }
 
 
-const root = document.getElementById('react-app')
+const root = document.getElementById('comments')
 ReactDOM.render(<App/>, root)
