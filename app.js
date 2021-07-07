@@ -14,7 +14,6 @@ class App extends Component {
     .then(response => {
       return response.json()
     }).then(data => {
-      // console.table(data.comments)
       this.setState({com: data.comments}) 
     })
   }
@@ -61,7 +60,7 @@ function CommentItem(prop) {
 
 function CommentItemReply(prop) {
   return (
-  <div class="com-con-rep">
+  <div className="com-con-rep">
     <CommentItem username={prop.username} comment={prop.comment} img={prop.img}/>
   </div>
     )

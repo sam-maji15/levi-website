@@ -10,12 +10,16 @@
   <!-- React -->
   <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
   
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="all" />
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- Popper js -->
+  <script src='https://unpkg.com/@popperjs/core@2'></script>
+ 
+  <!-- Box icons -->
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
   
   <!-- Default font - Poppins -->
@@ -23,9 +27,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <!-- ion icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
 </head>
 
 <body>
+  
   
   <header style="position: fixed; z-index: 2;">
   <nav class="navbar">
@@ -42,12 +54,13 @@
         <li id="btn-menu-skills">Skills</li>
         <li>Contact Me</li>
         <li id="btn-change-theme" style="display: block; margin-top: auto;">Change Theme
-        <a id="toggle-dark-theme" style="background: white;"><i style="font-size:1rem; position: absolute; right: 1rem;" class="fa fa-moon"></i></a>
+        <a id="toggle-dark-theme"><ion-icon name="moon-outline"></ion-icon></a>
         </li>
       </ul>
     
   </nav>
   </header>
+  
   
   <main class="block-01">
     <div class="con-scroll-text">
@@ -75,11 +88,11 @@
     </div>
     
     <div class="my-social-media">
-      <a><i class='bx bxl-linkedin'></i></a>
+      <a id="ic-linkedin"><i class='bx bxl-linkedin'></i></a>
       
-      <a href="https://instagram.com/sam.maji15"><i class="bx bxl-instagram"></i></a>
+      <a id="ic-instagram" href="https://instagram.com/sam.maji15"><i class="bx bxl-instagram"></i></a>
       
-      <a href="https://github.com/sam-maji15"><i class="bx bxl-github"></i></a>
+      <a id="ic-github" href="https://github.com/sam-maji15"><i class="bx bxl-github"></i></a>
     </div>
   </section>
   
@@ -103,22 +116,12 @@
     </div>
   </section>
   
-  <!-- <section class="block-04">
-    <h2>Satisfied Customer Reviews</h2>
-    <ul>
-      <li>"Ereh" - Mikasa</li>
-      <li>"Kill me" - Reiner</li>
-      <li>"Give up on your dreams and die" - Levi Ackerman</li>
-      <li>"Where is meat?" - Sasha</li>
-    </ul>
-  </section> -->
   
   
   <div class="block-05">
-    
-    <div>
-    <input type="text" id="inp-comments" value="" placeholder="Add a comment" />
-    <button><i class="fa fa-send"></i></button>
+    <div id="con-add-comment">
+    <input type="text" id="inp-comment" value="" placeholder="Add a comment" />
+    <button id="btn-add-comment"><i class="fa fa-send"></i></button>
     </div>
     
     <div id="comments">
@@ -139,19 +142,37 @@
     
     <h2>FOLLOW</h2>
     <div>
-      <a><i class='bx bxl-linkedin'></i></a>
+      <a id="ic-linkedin-sec"><i class='bx bxl-linkedin'></i></a>
       
-      <a href="https://instagram.com/sam.maji15"><i class="bx bxl-instagram"></i></a>
+      <a id="ic-instagram-sec" href="https://instagram.com/sam.maji15"><i class="bx bxl-instagram"></i></a>
       
-      <a href="https://github.com/sam-maji15"><i class="bx bxl-github"></i></a>
+      <a id="ic-github-sec" href="https://github.com/sam-maji15"><i class="bx bxl-github"></i></a>
     </div>
-    
   </section>
   
-  <!--script src="https://unpkg.com/scrollreveal"></script-->
+  <!-- tooltips -->
+  <div>
+    <div class="tooltip" id="tt-insta">
+      <h2>Follow me on Instagram</h2>
+    </div>
+    
+    <div class="tooltip" id="tt-github">
+      <h2>Follow me on Github</h2>
+    </div>
+
+    <div class="tooltip" id="tt-linkedin">
+      <h2>I don't have a linkedin</h2>
+    </div>
+    
+  </div>
+  
 
   <script src="config.js"></script>
-  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="./assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="./assets/js/tooltip.js" type="text/javascript" charset="utf-8"></script>
+  
 </body>
 </html>
 
