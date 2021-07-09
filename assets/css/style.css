@@ -22,6 +22,8 @@
     
     --bg1: white;
     --bg2: yellow;
+    --bg3: #2A3B47;
+    --bg4: white; 
     
     --pri-color-alt: limegreen;
     --dark-color-alt: #2A3B47;
@@ -52,7 +54,7 @@
     }
 }
 
-/*===== Margenes =====*/
+/* margins */
 :root{
     --mb-1: .5rem;
     --mb-2: 1rem;
@@ -76,14 +78,19 @@
 
 .dark-theme {
   --pri-color: #01261C;
+ 
   --bg1: #014029;
+  --bg3: #01261C;
+  --bg4: #6BBF89;
+  
   /* --sec-color:#025930; */
   --sec-color: #01261C;
+  
   --dark-color: #37A667;
+  --dark-color-alt: #6BBF89;
+  
   --text-color: #6BBF89;
   --white-color: #6BBF89;
-  
-  --dark-color-alt: #6BBF89;
 }
 
 html{
@@ -304,6 +311,9 @@ ul {
 
 
 /* BLOCK-05 */
+.block-05 {
+  background: var(--bg4);
+}
 #con-add-comment {
   height: 5rem;
   width: 100vw;
@@ -322,6 +332,7 @@ ul {
   border: var(--btn-border);
   border-right: none;
   outline: none;
+  background: none; 
 }
 #btn-add-comment {
   margin: 0;
@@ -340,7 +351,7 @@ ul {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  background: var(--white-color);
+  background: var(--bg3);
 }
 .block-06>h2 {
   width: fit-content;
@@ -411,7 +422,7 @@ ul {
 /* tooltips */
 .tooltip {
   display: none;
-  background: white;
+  background: var(--bg4);
   padding: var(--mb-1);
   box-shadow: var(--com-box-shadow);
   border-radius: 4px;
