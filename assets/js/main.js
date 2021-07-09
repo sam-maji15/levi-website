@@ -23,25 +23,6 @@ btn_menu_home.onclick = () => window.scroll({top: 0, left:0, behavior: 'smooth'}
 btn_menu_profile.onclick = () => window.scroll({top: c1, left: 0, behavior: 'smooth'})
 btn_menu_skills.onclick = () => window.scroll({top: c2, left: 0, behavior: 'smooth'})
 
-/* CHANGE THEME
-  def theme
-  dark theme */
-let btn_change_theme = document.getElementById('btn-change-theme')
-
-let btn_dark_theme = document.getElementById('toggle-dark-theme')
-
-function toggleDarkTheme() {
-  document.querySelector('html').classList.toggle('dark-theme')
-}
-
-btn_dark_theme.onclick = () => {
-  //document.querySelector('#toggle-dark-theme>ion-icon').getAttribute();
-  
-  toggleDarkTheme()
-  localStorage.setItem('theme', 'dark')
-}
-
-
 /* SCROLL REVEAL */
 /* const scr = ScrollReveal({
   origin: 'top',

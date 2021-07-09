@@ -1,4 +1,4 @@
-class Tools {
+export default class Tools {
   
   // default theme
   static theme = {}
@@ -128,7 +128,4 @@ static HSVtoRGB(h, s, v) {
       b: parseInt(result[3], 16)
     } : null;
   }
-  
 }
-
-export default Tools
